@@ -7,14 +7,15 @@
 // start by defining the function:
 // export function compress.... Good Luck!
 
-function compress(arr: any[]): any[] {
-  let newArr: any[] = [];
-  arr.forEach((val, i) => {
-    if (i === 0 || val !== arr[i - 1]) {
-      newArr.push(val);
-    }
-  });
-  return newArr;
-}
-let array: any[] = [1, 1, 1, 2, 2, 3, 3, 1, 1, 6, 7, 7, 7, 7];
-console.log(compress(array)); //[ 1, 2, 3, 1, 6, 7 ]
+// function compress(arr: any[]): any[] {
+//   let newArr: any[] = [];
+//   arr.forEach((val, i) => {
+//     if (i === 0 || val !== arr[i - 1]) {
+//       newArr.push(val);
+//     }
+//   });
+//   return ["Apple", "Orange"];
+// }
+// let array: number[] = [1, 1, 1, 2, 2, 3, 3, 1, 1, 6, 7, 7, 7, 7];
+// const result: number[] = compress(array);
+// console.log(compress(array)); //[ 1, 2, 3, 1, 6, 7 ]

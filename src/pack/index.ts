@@ -19,16 +19,17 @@
 //   }, []);
 // }
 
-// function pack(arr: []) {
-//   let newArrs = [[]];
-//   arr.forEach((val, i) => {
-//     if (i === 0 || val !== arr[i - 1]) {
-//       newArrs.push(val);
-//     }else {
-//    arr[arr.length - 1].push(val);
-//   });
-//   return newArrs;
-// }
+function pack(arr: any[]) {
+  let newArrs = [[]];
+  arr.forEach((val, i) => {
+    if (i === 0 || val !== arr[i - 1]) {
+      newArrs.push(val);
+    } else {
+      arr[arr.length - 1].push(val);
+    }
+  });
+  return newArrs;
+}
 
-// let array: any = [1, 1, 1, 2, 3, 3, 1, 1, 5, 6, 6, 6, 6];
-// console.log(pack(array));
+let array: any = [1, 1, 1, 2, 3, 3, 1, 1, 5, 6, 6, 6, 6];
+console.log(pack(array));
